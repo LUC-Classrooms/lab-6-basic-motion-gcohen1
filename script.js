@@ -13,7 +13,7 @@ var bodyColor = 200;
 var portholeColor = 0;
 
 function setup() {
-  createCanvas(320, 240);
+  createCanvas(400, 350);
 }
 
 function draw() {
@@ -25,8 +25,14 @@ function draw() {
   // add code here to change the ship location each frame
   x++; // add four to the value of x each frame 
   r += .02; // add .02 to the value of r each frame 
-  
-}
+  y -= .4; 
+
+  if (x > width){
+    x = 0; 
+  }
+  if (y < 0){
+    y = height;
+  }
 
 function ufo(tempX, tempY, tempD, tempR){
   // this custom function takes care of drawing a complex shape
