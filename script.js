@@ -5,7 +5,7 @@
 
 //global variables:
 //these will define the location of our spaceship
-var x = 160; //horizontal location
+var x = 140; //horizontal location
 var y = 120; // vertical location
 var d = 100; // diameter
 var r = 0; // rotation
@@ -23,7 +23,8 @@ function draw() {
   ufo(x, y, d, r); // call the ufo() function (see below)
   
   // add code here to change the ship location each frame
-  
+  x++; // add four to the value of x each frame 
+  r += .02; // add .02 to the value of r each frame 
   
 }
 
