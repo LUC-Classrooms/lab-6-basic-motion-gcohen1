@@ -33,6 +33,7 @@ function draw() {
   if (y < 0){
     y = height;
   }
+} // this bracket was missing -DW
 
 function ufo(tempX, tempY, tempD, tempR){
   // this custom function takes care of drawing a complex shape
